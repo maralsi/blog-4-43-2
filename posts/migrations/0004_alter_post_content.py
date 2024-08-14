@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('posts', '0002_post_rate'),
+        ('posts', '0003_alter_post_content'),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='post',
             name='content',
-            field=models.TextField(null=True),
+            field=models.TextField(blank=True, null=True),
         ),
     ]
